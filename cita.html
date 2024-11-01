@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yami Studio - Cita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #f06292;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e91e63;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+        /* Servicios */
+        .servicios {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .servicios h2 {
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .servicio-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .servicio-item:last-child {
+            border-bottom: none;
+        }
+
+        .precio {
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        /* Formulario de cita */
+        .form-cita {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-cita h2 {
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #f06292;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Encabezado -->
+   <header>
+    <img src="LOGOTIPO.jpg" alt="Logotipo de Yami Studio" style="width:150px;">
+    <h1>Yami Studio</h1>
+</header>
+<!-- Menú de Navegación -->
+<nav>
+    <a href="inicio.html">Inicio</a>
+    <a href="cita.html">Pide tu cita</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+    <!-- Sección de Servicios -->
+    <section class="servicios">
+        <h2>Servicios y Precios</h2>
+        <div class="servicio-item">
+            <span>Manicura Francesa</span>
+            <span class="precio">22 €</span>
+        </div>
+        <div class="servicio-item">
+            <span>Semipermanente de un Color</span>
+            <span class="precio">20 €</span>
+        </div>
+        <div class="servicio-item">
+            <span>Uñas Acrílicas</span>
+            <span class="precio">28 €</span>
+        </div>
+        <div class="servicio-item">
+            <span>Pedicura</span>
+            <span class="precio">30 €</span>
+        </div>
+    </section>
+
+    <!-- Formulario para Reservar Cita -->
+    <section class="form-cita">
+        <h2>Reservar Cita</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora</label>
+                <select id="hora" name="hora" required>
+                    <option value="">Selecciona una hora</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Reservar</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
